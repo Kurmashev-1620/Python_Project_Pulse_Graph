@@ -10,7 +10,7 @@ ui = uic.loadUi('Pulse_Graff.ui')
 ui.setWindowTitle('Pulse Graff')
 
 serial = QSerialPort()
-serial.setBaudRate(230400)
+serial.setBaudRate(115200)
 
 portList = []
 ports = QSerialPortInfo().availablePorts()
@@ -81,5 +81,3 @@ timer.start(1000)  # Обновляем каждую секунду
 
 ui.show()
 app.exec()
-
-git remote add origin https://github.com/Kurmashev-1620/Python_Project_Pulse_Graph.git
